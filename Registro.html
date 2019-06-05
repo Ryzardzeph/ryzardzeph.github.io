@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title> Registro</title>
+	 <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/Registro.css">   
+</head>
+    <body>
+    <div class="login-box">
+    <img src="imagen/avatar.png" class="avatar">
+        <h1>Registra tus datos</h1>
+            <form>
+            <p>Usuario</p>
+            <input type="text" name="username" placeholder="Ingresar usuario" maxlength="20" required pattern="[A-Z|a-z|0-9]+"
+         oninput="setCustomValidity('')" oninvalid="setCustomValidity('Letras o números, mínimo 5 y máximo 20')">
+            <p>Contraseña</p>
+            <input type="password" name="password" placeholder="Ingresar Contraseña" required="required">
+			<p>Repetir Contraseña</p>
+            <input type="password" name="password" placeholder="Ingresar Contraseña" required="required">
+			<p>Matricula</p>
+            <input type="text" name="password"  placeholder="Ingresar Matricula" required="required">
+			<p>Correo</p>
+            <input type="email" name="email"  placeholder="Ingresar Email" required="required">
+			<p>Nombre</p>
+            <input type="text" name="Nombre"  placeholder="Ingresar Nombre" required="required" maxlength="35" required pattern="[A-Za-z\sáéíóúÁÉÍÓÚ]+"
+		  oninput="setCustomValidity('')" ninvalid="setCustomValidity('Solo letras, Inicia con mayusculas')">
+			<p>Apellido paterno</p>
+            <input type="text" name="apellidoP"  placeholder="Ingresar Apellido" required="required" maxlength="35" required pattern="[A-Za-z\sáéíóúÁÉÍÓÚ]+"
+		  oninput="setCustomValidity('')" ninvalid="setCustomValidity('Solo letras, Inicia con mayusculas')">
+			<p>Apellimo Materno</p>
+            <input type="text" name="apellidoM"  placeholder="Ingresar Apellido" required="required" maxlength="35" required pattern="[A-Za-z\sáéíóúÁÉÍÓÚ]+"
+		  oninput="setCustomValidity('')" ninvalid="setCustomValidity('Solo letras, Inicia con mayusculas')">
+			<p>Teléfono</p>
+            <input type="text" name="telefono"  placeholder="Ingresar Teléfono" required="required" maxlength="12" required pattern="[0-9]+"
+		  oninput="setCustomValidity('')" oninvalid="setCustomValidity('Introduce un numero telefonico valido')">
+			
+            <input type="submit" name="submit" value="Registrar">
+            <a href="#">Olvidó su contraseña?</a> <br>
+            <a href="login.html">Ya tiene cuenta? Inicie sesión</a> <br>	
+            </form>
+        
+        
+        </div>
+    
+    </body>
+</html>
